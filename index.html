@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,51 +9,43 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 20px;
+            padding: 20px;
             background-color: #f9f9f9;
         }
-
         .container {
             max-width: 800px;
-            margin: 20px auto;
+            margin: auto;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 10px;
             background-color: #fff;
         }
-
         .form-group {
             margin-bottom: 15px;
             display: flex;
             align-items: center;
-            flex-wrap: wrap;
         }
-
         label {
-            flex: 1 0 100%;
+            flex: 1;
             font-size: 1em;
         }
-
         input[type="number"] {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
+            width: 100px;
+            padding: 5px;
+            margin-left: 10px;
             box-sizing: border-box;
         }
-
         .small-text {
             font-size: 0.9em;
             color: #666;
             margin-left: 10px;
             font-style: italic;
         }
-
         .button-group {
             text-align: center;
             margin-top: 20px;
         }
-
         button {
             padding: 10px 20px;
             font-size: 1em;
@@ -63,50 +54,40 @@
             border-radius: 20px;
             cursor: pointer;
         }
-
         .calculate-button {
             background-color: #3b5998;
             color: white;
         }
-
         .reset-button {
             background-color: #f1f1f1;
             color: #333;
         }
-
         .caption {
             text-align: center;
             font-size: 0.9em;
             margin-top: 20px;
-            color: #666;
+            color: #666; /* Slightly lighter color for secondary text */
         }
-
         table {
             width: 100%;
             margin-top: 20px;
             border-collapse: collapse;
             background-color: #FFEA00;
             font-size: 0.9em;
-            overflow-x: auto;
-            display: block;
         }
-
         th, td {
             border: 1.5pt solid #ccc;
             padding: 10px;
             text-align: left;
         }
-
         th {
             background-color: #f0f0f0;
         }
-
         .result-text {
             font-size: 1.2em;
             color: red;
             font-weight: bold;
         }
-
         .formulas {
             margin-top: 20px;
             background-color: #f9f9f9;
@@ -114,59 +95,20 @@
             border-radius: 10px;
             border: 1px solid #ccc;
         }
-
         .formula {
             margin-bottom: 10px;
         }
-
         .formula h4 {
             margin: 0;
             text-decoration: underline;
         }
-
         .formula p {
             margin: 5px 0 0 0;
             font-family: monospace;
             text-decoration: underline;
         }
-
-        /* Media query for smaller screens */
-        @media (max-width: 600px) {
-            .container {
-                padding: 15px;
-            }
-
-            .form-group {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            label {
-                margin-bottom: 5px;
-            }
-
-            input[type="number"] {
-                width: 100%;
-            }
-
-            table th,
-            table td {
-                padding: 8px;
-                font-size: 0.8em;
-            }
-
-            .button-group button {
-                padding: 8px 15px;
-                font-size: 0.9em;
-            }
-
-            .formulas {
-                padding: 10px;
-            }
-        }
     </style>
 </head>
-
 <body>
     <div class="container">
         <h2>Neonatal IV Fluid Calculator</h2>
@@ -319,5 +261,4 @@
         }
     </script>
 </body>
-
 </html>
